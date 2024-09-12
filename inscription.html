@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+
+    <title>Le site non officiel de Chuck Norris</title>
+
+  </head>
+
+<body>
+    <form action="sendToMySecondYearInIut.php" method="get">
+        <fieldset>
+            <legend>informations personnelles</legend>
+            <div>
+                <label for="surname">Nom*</label>
+                <input id="surname" name="uname" type="text" required="required">
+            </div>
+            <div>
+                <label for="surname">Prenom*</label>
+                <input id="surname" name="uname" type="text" required="required">
+            </div>
+            <div>
+                <label for="email">adresse mail*</label>
+                <input type="email" id="email" name="email" required="required" placeholder="yourmail@domain.com"> 
+            </div>
+            <div id="boite">
+                <label for="sexe1">sexe* :</label>
+                <div>
+                    <input type="radio" id="sexe1" name="sexe" value="homme" required="required">
+                    <label for="sexe1">Je suis un homme</label>
+                </div>
+                <div>
+                    <input type="radio" id="sexe2" name="sexe" value="femme">
+                    <label for="sexe2">Je suis une femme</label>
+                </div>
+                <div>
+                    <input type="radio" id="sexe3" name="sexe" value="hélicoptère de combat apache avec mini frigo pepsi">
+                    <label for="vehicle3">Je suis un hélicoptère de combat apache avec mini frigo pepsi</label>
+                </div>
+                <div>
+                    <input type="radio" id="sexe4" name="sexe" value="autre">
+                    <label for="sexe4">Je suis autre</label>
+                </div>
+            </div>
+            <div>
+                <label for="birthday">Date de naissance*</label>
+                <input type="date" id="birthday" name="birthday" required="required"> 
+            </div>
+            <div>
+                <label for="paus-select">pays d'origine*</label>
+                <select name="pays" id="pays-select" required="required">
+                <option value="fr" >France</option>
+                <option value="us">U.S.A</option>
+                <option value="cn">Chine</option>
+                <option value="vn">Viêt Nam</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>les sports de combat</legend>
+            <div>
+                <label for="karaté">Niveau de karaté (entre 1 et 5)*</label>
+                <input type="number" id="karaté" name="karaté" min="1" max="5" required="required"> 
+            </div>
+            <div>
+                <label for="art-select">arts-martiaux préférés*</label>
+                <select name="art-martiaux" id="art-select" required="required" multiple>
+                <option value="Kung fu" >Kung fu</option>
+                <option value="Karaté">Karaté</option>
+                <option value="Full-contact">Full-contact</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>inscription</legend>
+            <div>
+                <label for="pwd">Mot de passe*</label>
+                <input type="password" id="pwd" name="pwd" required="required" pattern="[a-z0-9]{8}"> 
+            </div>
+            <div id="boite">
+                <label for="engagement">choisissez votre niveau d'engagement*</label>
+                <div>
+                    <input type="radio" id="basique" name="engagement" value="basique" required="required">
+                    <label for="engagement">basique (5€)</label>
+                </div>
+                <div>
+                    <input type="radio" id="gold" name="engagement" value="gold">
+                    <label for="engagement">gold (15€)</label>
+                </div>
+                <div>
+                    <input type="radio" id="tatane in your face" name="engagement" value="tatane in your face">
+                    <label for="engagement">tatane in your face (50€)</label>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <label for="essais">Message pour Chuck* :</label>
+                </div>
+                <textarea name="message" id="message" cols="30" rows="10" required="required" placeholder="evoie un message pour le dieu des dieu chuck norris"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" id="lu" name="lu" value="lu" required="required">
+                <label for="lu">J’ai bien lu les clauses que je n’ai pas lues*</label>
+            </div>
+        </fieldset>
+        
+        
+        
+        
+
+
+        <div>
+            <input type="submit" value="Envoyer">
+        </div>
+    </form>
+</body>
